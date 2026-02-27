@@ -111,111 +111,112 @@ def extract_total(text):
 # =========================
 # ITEM EXTRACTION
 # =========================
-# def extract_items(text):
-#     items = []
-
-#     # Extract section between ITEMS and SUMMARY
-#     match = re.search(r"ITEMS(.*?)SUMMARY", text, re.DOTALL | re.IGNORECASE)
-#     if not match:
-#         return items
-
-#     block = match.group(1)
-
-#     # Normalize whitespace (important for OCR)
-#     block = re.sub(r"\s+", " ", block)
-
-#     # Split using item numbers like "1." "2." etc.
-#     raw_items = re.split(r"\b\d+\.\s*", block)
-
-#     for raw in raw_items:
-#         raw = raw.strip()
-#         if not raw:
-#             continue
-
-#         # Extract all decimal numbers
-#         numbers = re.findall(r"\d+[.,]\d+", raw)
-
-#         if not numbers:
-#             continue
-
-#         # Last number = Gross worth
-#         price = float(numbers[-1].replace(",", "."))
-
-#         # Remove all numeric values and VAT percentages
-#         cleaned = re.sub(r"\d+[.,]?\d*", "", raw)
-#         cleaned = re.sub(r"\d+%", "", cleaned)
-#         cleaned = cleaned.replace("each", "")
-#         cleaned = cleaned.strip()
-
-#         # Remove leftover double spaces
-#         cleaned = re.sub(r"\s{2,}", " ", cleaned)
-
-#         items.append({
-#             "name": cleaned,
-#             "price": price
-#         })
-
-#     return items
 def extract_items(text):
     items = []
 
-    # Extract ITEMS → SUMMARY block
+    # Extract section between ITEMS and SUMMARY
     match = re.search(r"ITEMS(.*?)SUMMARY", text, re.DOTALL | re.IGNORECASE)
     if not match:
         return items
 
     block = match.group(1)
 
-    # Normalize spacing but KEEP item numbers
-    block = re.sub(r"\r", "", block)
+    # Normalize whitespace (important for OCR)
+    block = re.sub(r"\s+", " ", block)
 
-    # Split using lookahead so numbers stay grouped correctly
-    raw_items = re.split(r"(?=\n?\s*\d+\.\s*)", block)
+    # Split using item numbers like "1." "2." etc.
+    raw_items = re.split(r"\b\d+\.\s*", block)
 
     for raw in raw_items:
         raw = raw.strip()
-
-        # Skip headers
-        if not raw or raw.lower().startswith("no"):
+        if not raw:
             continue
 
         # Extract all decimal numbers
-        numbers = re.findall(r"\d+,\d+", raw)
+        numbers = re.findall(r"\d+[.,]\d+", raw)
 
         if not numbers:
             continue
 
-        # LAST number = Gross worth
-        gross_price = float(numbers[-1].replace(",", "."))
+        # Last number = Gross worth
+        price = float(numbers[-1].replace(",", "."))
 
-        # Remove numeric-only lines & VAT
-        lines = raw.splitlines()
-        desc_parts = []
+        # Remove all numeric values and VAT percentages
+        cleaned = re.sub(r"\d+[.,]?\d*", "", raw)
+        cleaned = re.sub(r"\d+%", "", cleaned)
+        cleaned = cleaned.replace("each", "")
+        cleaned = cleaned.strip()
 
-        for line in lines:
-            line = line.strip()
-
-            # Skip pure numbers (qty, net, etc.)
-            if re.fullmatch(r"\d+,\d+", line):
-                continue
-            if "%" in line:
-                continue
-            if line.lower() == "each":
-                continue
-            if re.match(r"\d+\.", line):
-                continue
-
-            desc_parts.append(line)
-
-        name = " ".join(desc_parts)
-        name = re.sub(r"\s{2,}", " ", name).strip()
+        # Remove leftover double spaces
+        cleaned = re.sub(r"\s{2,}", " ", cleaned)
 
         items.append({
-            "name": name,
-            "price": gross_price
+            "name": cleaned,
+            "price": price
         })
 
     return items
+# def extract_items(text):
+#     items = []
+
+#     # Extract ITEMS → SUMMARY block
+#     match = re.search(r"ITEMS(.*?)SUMMARY", text, re.DOTALL | re.IGNORECASE)
+#     if not match:
+#         return items
+
+#     block = match.group(1)
+
+#     # Normalize spacing but KEEP item numbers
+#     block = re.sub(r"\r", "", block)
+
+#     # Split using lookahead so numbers stay grouped correctly
+#     raw_items = re.split(r"(?=\n?\s*\d+\.\s*)", block)
+
+#     for raw in raw_items:
+#         raw = raw.strip()
+
+#         # Skip headers
+#         if not raw or raw.lower().startswith("no"):
+#             continue
+
+#         # Extract all decimal numbers
+#         numbers = re.findall(r"\d+,\d+", raw)
+
+#         if not numbers:
+#             continue
+
+#         # LAST number = Gross worth
+#         gross_price = float(numbers[3].replace(",", "."))
+
+#         # Remove numeric-only lines & VAT
+#         lines = raw.splitlines()
+#         desc_parts = []
+
+#         for line in lines:
+#             line = line.strip()
+
+#             # Skip pure numbers (qty, net, etc.)
+#             if re.fullmatch(r"\d+,\d+", line):
+#                 continue
+#             if "%" in line:
+#                 continue
+#             if line.lower() == "each":
+#                 continue
+#             if re.match(r"\d+\.", line):
+#                 continue
+
+#             desc_parts.append(line)
+
+#         name = " ".join(desc_parts)
+#         name = re.sub(r"\s{2,}", " ", name).strip()
+
+#         items.append({
+#             "name": name,
+#             "price": gross_price
+#         })
+
+#     return items
+
 # =========================
 # CATEGORIZATION
 # =========================
