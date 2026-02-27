@@ -3,70 +3,78 @@ import time
 import shutil
 import uuid
 import hashlib
+import json
 import re
 
-import pandas as pd
 import pytesseract
 from PIL import Image
-
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-# ==============================
+# =========================
 # CONFIG
-# ==============================
+# =========================
 INCOMING_DIR = "invoices/incoming"
 PROCESSED_DIR = "invoices/processed"
 FAILED_DIR = "invoices/failed"
 OUTPUT_DIR = "output"
 
-INVOICE_CSV = os.path.join(OUTPUT_DIR, "invoices.csv")
-ITEMS_CSV = os.path.join(OUTPUT_DIR, "items.csv")
+DB_PATH = os.path.join(OUTPUT_DIR, "invoices_db.json")
 
 os.makedirs(INCOMING_DIR, exist_ok=True)
 os.makedirs(PROCESSED_DIR, exist_ok=True)
 os.makedirs(FAILED_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# ==============================
+# =========================
 # CATEGORY RULES
-# ==============================
+# =========================
 CATEGORY_RULES = {
-    "technology": [
-        "computer", "pc", "desktop", "laptop",
-        "intel", "nvidia", "workstation"
-    ],
-    "fashion": [
-        "shoes", "shirt", "jeans", "clothing"
-    ],
-    "home essentials": [
-        "mouse", "keyboard", "chair", "table"
-    ]
+    "technology": ["computer", "pc", "desktop", "laptop", "intel", "nvidia"],
+    "fashion": ["shoes", "shirt", "jeans", "clothing"],
+    "home essentials": ["mouse", "keyboard", "chair", "table"]
 }
 
-# ==============================
-# UTILITIES
-# ==============================
-def get_file_hash(file_path):
-    with open(file_path, "rb") as f:
+# =========================
+# JSON DB HELPERS
+# =========================
+def load_db():
+    if not os.path.exists(DB_PATH):
+        return {"invoices": []}
+    with open(DB_PATH, "r") as f:
+        return json.load(f)
+
+def save_db(db):
+    with open(DB_PATH, "w") as f:
+        json.dump(db, f, indent=2)
+
+# =========================
+# DEDUPLICATION (HASH)
+# =========================
+def get_file_hash(path):
+    with open(path, "rb") as f:
         return hashlib.md5(f.read()).hexdigest()
 
-def invoice_already_processed(file_hash):
-    if not os.path.exists(INVOICE_CSV):
-        return False
-    df = pd.read_csv(INVOICE_CSV)
-    return file_hash in df["file_hash"].values
+def already_processed(file_hash):
+    db = load_db()
+    for inv in db["invoices"]:
+        if inv.get("_hash") == file_hash:
+            return True
+    return False
 
-# ==============================
+# =========================
 # OCR
-# ==============================
+# =========================
 def extract_text(image_path):
-    image = Image.open(image_path)
-    return pytesseract.image_to_string(image)
+    return pytesseract.image_to_string(Image.open(image_path))
 
-# ==============================
+# =========================
 # FIELD EXTRACTION
-# ==============================
+# =========================
+def extract_invoice_no(text):
+    match = re.search(r"Invoice\s*no[:\-]?\s*(\d+)", text, re.IGNORECASE)
+    return match.group(1) if match else "Unknown"
+
 def extract_vendor(text):
     lines = text.splitlines()
     for i, line in enumerate(lines):
@@ -78,7 +86,7 @@ def extract_date(text):
     match = re.search(r"\d{2}/\d{2}/\d{4}", text)
     return match.group() if match else "Unknown"
 
-def extract_total_amount(text):
+def extract_total(text):
     for line in text.splitlines():
         if "Total" in line:
             nums = re.findall(r"\d+[.,]\d+", line)
@@ -86,9 +94,9 @@ def extract_total_amount(text):
                 return float(nums[-1].replace(",", "."))
     return 0.0
 
-# ==============================
+# =========================
 # ITEM EXTRACTION
-# ==============================
+# =========================
 def extract_items(text):
     items = []
     lines = text.splitlines()
@@ -107,16 +115,13 @@ def extract_items(text):
                 if prices:
                     price = float(prices[-1].replace(",", "."))
                     name = content.replace(prices[-1], "").strip()
-                    items.append({
-                        "name": name,
-                        "price": price
-                    })
+                    items.append({"name": name, "price": price})
     return items
 
-# ==============================
+# =========================
 # CATEGORIZATION
-# ==============================
-def categorize_item(name):
+# =========================
+def categorize(name):
     name = name.lower()
     for category, keywords in CATEGORY_RULES.items():
         for kw in keywords:
@@ -124,88 +129,88 @@ def categorize_item(name):
                 return category
     return "uncategorized"
 
-# ==============================
-# PROCESS SINGLE INVOICE
-# ==============================
+# =========================
+# PROCESS INVOICE
+# =========================
 def process_invoice(file_path):
     text = extract_text(file_path)
+    file_hash = get_file_hash(file_path)
 
-    invoice_id = str(uuid.uuid4())
-    vendor = extract_vendor(text)
-    date = extract_date(text)
-    total_amount = extract_total_amount(text)
+    if already_processed(file_hash):
+        return None  # skip duplicate
 
-    invoice_record = {
-        "invoice_id": invoice_id,
-        "file_hash": get_file_hash(file_path),
-        "vendor": vendor,
-        "date": date,
-        "total_amount": total_amount
+    invoice = {
+        "invoice_id": str(uuid.uuid4()),
+        "invoice_no": extract_invoice_no(text),
+        "vendor": extract_vendor(text),
+        "date": extract_date(text),
+        "total_amount": extract_total(text),
+        "items": [],
+        "_hash": file_hash  # internal only
     }
 
-    item_records = []
     for item in extract_items(text):
-        item_records.append({
+        invoice["items"].append({
             "item_id": str(uuid.uuid4()),
-            "invoice_id": invoice_id,
-            "item_name": item["name"],
+            "name": item["name"],
             "price": item["price"],
-            "category": categorize_item(item["name"])
+            "category": categorize(item["name"])
         })
 
-    return invoice_record, item_records
+    return invoice
 
-# ==============================
-# CSV STORAGE
-# ==============================
-def save_to_csv(invoice, items):
-    inv_df = pd.DataFrame([invoice])
-    item_df = pd.DataFrame(items)
+# =========================
+# SAVE TO DB
+# =========================
+def save_invoice(invoice):
+    db = load_db()
+    db["invoices"].append(invoice)
+    save_db(db)
 
-    if os.path.exists(INVOICE_CSV):
-        inv_df.to_csv(INVOICE_CSV, mode="a", index=False, header=False)
-    else:
-        inv_df.to_csv(INVOICE_CSV, index=False)
-
-    if os.path.exists(ITEMS_CSV):
-        item_df.to_csv(ITEMS_CSV, mode="a", index=False, header=False)
-    else:
-        item_df.to_csv(ITEMS_CSV, index=False)
-
-# ==============================
-# AUTOMATION HANDLER
-# ==============================
+# =========================
+# FILE HANDLER
+# =========================
 class InvoiceHandler(FileSystemEventHandler):
-    def on_created(self, event):
-        if event.is_directory:
-            return
-
-        file_path = event.src_path
-        time.sleep(1)  # ensure file is fully written
-
+    def handle_file(self, path):
         try:
-            file_hash = get_file_hash(file_path)
+            invoice = process_invoice(path)
 
-            if invoice_already_processed(file_hash):
-                shutil.move(file_path, PROCESSED_DIR)
-                return
+            if invoice:
+                save_invoice(invoice)
 
-            invoice, items = process_invoice(file_path)
-            save_to_csv(invoice, items)
-
-            shutil.move(file_path, PROCESSED_DIR)
-            print("Processed:", os.path.basename(file_path))
+            shutil.move(path, PROCESSED_DIR)
+            print("Processed:", os.path.basename(path))
 
         except Exception as e:
             print("Failed:", e)
-            shutil.move(file_path, FAILED_DIR)
+            shutil.move(path, FAILED_DIR)
 
-# ==============================
+    def on_created(self, event):
+        if not event.is_directory:
+            time.sleep(1)
+            self.handle_file(event.src_path)
+
+# =========================
+# INITIAL PROCESSING
+# =========================
+def process_existing_files(handler):
+    for file in os.listdir(INCOMING_DIR):
+        path = os.path.join(INCOMING_DIR, file)
+        if os.path.isfile(path):
+            handler.handle_file(path)
+
+# =========================
 # RUN AUTOMATION
-# ==============================
+# =========================
 if __name__ == "__main__":
+    handler = InvoiceHandler()
+
+    # Process already-existing invoices
+    process_existing_files(handler)
+
+    # Watch for new ones
     observer = Observer()
-    observer.schedule(InvoiceHandler(), INCOMING_DIR, recursive=False)
+    observer.schedule(handler, INCOMING_DIR, recursive=False)
     observer.start()
 
     print("Invoice automation running...")
