@@ -75,12 +75,15 @@ def extract_invoice_no(text):
     match = re.search(r"Invoice\s*no[:\-]?\s*(\d+)", text, re.IGNORECASE)
     return match.group(1) if match else "Unknown"
 
+# def extract_vendor(text):
+#     lines = text.splitlines()
+#     for i, line in enumerate(lines):
+#         if "Seller" in line:
+#             return lines[i + 1].strip()
+#     return "Unknown"
 def extract_vendor(text):
-    lines = text.splitlines()
-    for i, line in enumerate(lines):
-        if "Seller" in line:
-            return lines[i + 1].strip()
-    return "Unknown"
+    match = re.search(r"Seller:\s*\n(.+)", text, re.IGNORECASE)
+    return match.group(1).strip() if match else "Unknown"
 
 def extract_date(text):
     match = re.search(r"\d{2}/\d{2}/\d{4}", text)
