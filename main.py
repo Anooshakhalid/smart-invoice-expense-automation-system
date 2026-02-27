@@ -86,13 +86,7 @@ def extract_date(text):
     match = re.search(r"\d{2}/\d{2}/\d{4}", text)
     return match.group() if match else "Unknown"
 
-# def extract_total(text):
-#     for line in text.splitlines():
-#         if "Gross Worth" in line:
-#             nums = re.findall(r"\d+[.,]\d+", line)
-#             if nums:
-#                 return float(nums[-1].replace(",", "."))
-#     return 0.0
+
 def extract_total(text):
     """
     Extract invoice gross worth from SUMMARY section.
@@ -116,25 +110,51 @@ def extract_total(text):
 # =========================
 def extract_items(text):
     items = []
-    lines = text.splitlines()
-    parsing = False
 
-    for line in lines:
-        if "ITEMS" in line:
-            parsing = True
+    # Extract everything between ITEMS and SUMMARY
+    items_block = re.search(r"ITEMS(.*?)SUMMARY", text, re.DOTALL | re.IGNORECASE)
+    if not items_block:
+        return items
+
+    block = items_block.group(1)
+
+    # Split by item numbers (1. 2. 3. etc.)
+    raw_items = re.split(r"\n\s*\d+\.\s*\n", block)
+
+    for raw in raw_items:
+        raw = raw.strip()
+        if not raw:
             continue
 
-        if parsing:
-            match = re.match(r"\s*\d+\.\s+(.*)", line)
-            if match:
-                content = match.group(1)
-                prices = re.findall(r"\d+[.,]\d+", content)
-                if prices:
-                    price = float(prices[-1].replace(",", "."))
-                    name = content.replace(prices[-1], "").strip()
-                    items.append({"name": name, "price": price})
-    return items
+        lines = [l.strip() for l in raw.splitlines() if l.strip()]
 
+        numbers = re.findall(r"\d+[.,]\d+", raw)
+
+        if not numbers:
+            continue
+
+        # Last number in block = Gross worth
+        price = float(numbers[-1].replace(",", "."))
+
+        # Remove numeric-only lines and % lines from description
+        desc_lines = []
+        for l in lines:
+            if re.fullmatch(r"\d+[.,]?\d*", l):
+                continue
+            if "%" in l:
+                continue
+            if l.lower() == "each":
+                continue
+            desc_lines.append(l)
+
+        name = " ".join(desc_lines)
+
+        items.append({
+            "name": name.strip(),
+            "price": price
+        })
+
+    return items
 # =========================
 # CATEGORIZATION
 # =========================
