@@ -114,46 +114,44 @@ def extract_total(text):
 def extract_items(text):
     items = []
 
-    # Extract everything between ITEMS and SUMMARY
-    items_block = re.search(r"ITEMS(.*?)SUMMARY", text, re.DOTALL | re.IGNORECASE)
-    if not items_block:
+    # Extract section between ITEMS and SUMMARY
+    match = re.search(r"ITEMS(.*?)SUMMARY", text, re.DOTALL | re.IGNORECASE)
+    if not match:
         return items
 
-    block = items_block.group(1)
+    block = match.group(1)
 
-    # Split by item numbers (1. 2. 3. etc.)
-    raw_items = re.split(r"\n\s*\d+\.\s*\n", block)
+    # Normalize whitespace (important for OCR)
+    block = re.sub(r"\s+", " ", block)
+
+    # Split using item numbers like "1." "2." etc.
+    raw_items = re.split(r"\b\d+\.\s*", block)
 
     for raw in raw_items:
         raw = raw.strip()
         if not raw:
             continue
 
-        lines = [l.strip() for l in raw.splitlines() if l.strip()]
-
+        # Extract all decimal numbers
         numbers = re.findall(r"\d+[.,]\d+", raw)
 
         if not numbers:
             continue
 
-        # Last number in block = Gross worth
+        # Last number = Gross worth
         price = float(numbers[-1].replace(",", "."))
 
-        # Remove numeric-only lines and % lines from description
-        desc_lines = []
-        for l in lines:
-            if re.fullmatch(r"\d+[.,]?\d*", l):
-                continue
-            if "%" in l:
-                continue
-            if l.lower() == "each":
-                continue
-            desc_lines.append(l)
+        # Remove all numeric values and VAT percentages
+        cleaned = re.sub(r"\d+[.,]?\d*", "", raw)
+        cleaned = re.sub(r"\d+%", "", cleaned)
+        cleaned = cleaned.replace("each", "")
+        cleaned = cleaned.strip()
 
-        name = " ".join(desc_lines)
+        # Remove leftover double spaces
+        cleaned = re.sub(r"\s{2,}", " ", cleaned)
 
         items.append({
-            "name": name.strip(),
+            "name": cleaned,
             "price": price
         })
 
