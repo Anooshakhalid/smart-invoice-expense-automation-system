@@ -86,12 +86,29 @@ def extract_date(text):
     match = re.search(r"\d{2}/\d{2}/\d{4}", text)
     return match.group() if match else "Unknown"
 
+# def extract_total(text):
+#     for line in text.splitlines():
+#         if "Gross Worth" in line:
+#             nums = re.findall(r"\d+[.,]\d+", line)
+#             if nums:
+#                 return float(nums[-1].replace(",", "."))
+#     return 0.0
 def extract_total(text):
-    for line in text.splitlines():
-        if "Total" in line:
-            nums = re.findall(r"\d+[.,]\d+", line)
-            if nums:
-                return float(nums[-1].replace(",", "."))
+    """
+    Extract invoice gross worth from SUMMARY section.
+    We take the LAST decimal number in the SUMMARY block.
+    """
+    summary_match = re.search(r"SUMMARY(.*)", text, re.DOTALL | re.IGNORECASE)
+    if not summary_match:
+        return 0.0
+
+    summary_text = summary_match.group(1)
+
+    numbers = re.findall(r"\d+[.,]\d+", summary_text)
+
+    if numbers:
+        return float(numbers[-1].replace(",", "."))  # last number = gross total
+
     return 0.0
 
 # =========================
