@@ -231,11 +231,20 @@ def categorize(name):
 # =========================
 # PROCESS INVOICE
 # =========================
+
 def process_invoice(file_path):
     text = extract_text(file_path)
+
+    print("\n" + "="*60)
+    print("Extracted OCR Text from:", os.path.basename(file_path))
+    print("="*60)
+    print(text)
+    print("="*60 + "\n")
+
     file_hash = get_file_hash(file_path)
 
     if already_processed(file_hash):
+        print("Duplicate invoice detected. Skipping.")
         return None  # skip duplicate
 
     invoice = {
