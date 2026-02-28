@@ -100,58 +100,17 @@ def extract_date(text):
     return match.group() if match else "Unknown"
 
 
-# def extract_total(text):
-
-#     """
- 
-#     """
-#     summary_match = re.search(r"SUMMARY(.*)", text, re.DOTALL | re.IGNORECASE)
-#     if not summary_match:
-#         return 0.0
-
-#     summary_text = summary_match.group(1)
-
-#     numbers = re.findall(r"\d+[.,]\d+", summary_text)
-
-#     if numbers:
-#         return float(numbers[-1].replace(",", "."))  # last number = gross total
-
-#     return 0.0
-
-# def extract_total(text):
-
-#     """
-#     Extract invoice gross worth from SUMMARY section.
-#     We take the LAST decimal number in the SUMMARY block.
-#     Extract final Gross worth total.
-#     Handles:
-#     - 2 012,51
-#     - $ 2 012,51
-#     - 228,68
-#     """
-
-    # # Find ALL gross worth totals with thousands support
-    # matches = re.findall(
-    #     r"Gross\s*worth\s*\n?\$?\s*([\d\s]+,\d{2})",
-    #     text,
-    #     re.IGNORECASE
-    # )
-
-    # if not matches:
-    #     return 0.0
-
-    # # Always take the LAST occurrence (final invoice total)
-    # total_str = matches[-1]
-
-    # # Remove thousands spaces
-    # total_str = total_str.replace(" ", "")
-
-    # # Convert to float
-    # total_str = total_str.replace(",", ".")
-
-    # return float(total_str)
 
 def extract_total(text):
+    """
+    Extract invoice gross worth from SUMMARY section.
+    We take the LAST decimal number in the SUMMARY block.
+    Extract final Gross worth total.
+    Handles:
+    - 2 012,51
+    - $ 2 012,51
+    - 228,68
+    """
     matches = re.findall(
         r"Gross\s*worth\s*\n?\$?\s*([\d\s]+,\d{2})",
         text,
@@ -183,7 +142,7 @@ def extract_total(text):
 def extract_items(text):
     items = []
 
-    # 1️⃣ Extract ITEMS block
+    #  Extract ITEMS block
     items_match = re.search(r"ITEMS(.*?)SUMMARY", text, re.DOTALL | re.IGNORECASE)
     if not items_match:
         return items
@@ -196,7 +155,7 @@ def extract_items(text):
     # Normalize spacing
     block = re.sub(r"\r", "", block)
 
-    # 2️⃣ Split using quantity pattern (e.g. 2,00 3,00 1,00)
+    # Split using quantity pattern (e.g. 2,00 3,00 1,00)
     raw_items = re.split(r"\n(?=.*\d+,\d{2})", block)
 
     descriptions = []
@@ -222,7 +181,7 @@ def extract_items(text):
 
         descriptions.append(raw)
 
-    # 3️⃣ Extract gross worth list from SUMMARY
+    # Extract gross worth list from SUMMARY
     summary_match = re.search(r"Gross\s*worth(.*?)(?:Gross worth|\$)", text, re.DOTALL | re.IGNORECASE)
     if not summary_match:
         return []
@@ -233,7 +192,7 @@ def extract_items(text):
 
     gross_prices = [float(v.replace(",", ".")) for v in gross_values]
 
-    # 4️⃣ Match descriptions with gross prices by order
+    #  Match descriptions with gross prices by order
     for i in range(min(len(descriptions), len(gross_prices))):
         items.append({
             "name": descriptions[i],
@@ -241,92 +200,6 @@ def extract_items(text):
         })
 
     return items
-# def extract_items(text):
-#     items = []
-
-#     # Extract ITEMS block
-#     items_match = re.search(r"ITEMS(.*?)SUMMARY", text, re.DOTALL | re.IGNORECASE)
-#     if not items_match:
-#         return items
-
-#     block = items_match.group(1)
-
-#     block = re.sub(r"No\.\s*Description\s*Qty\s*UM?", "", block, flags=re.IGNORECASE)
-#     block = block.strip()
-
-#     # ----------------------------------------
-#     # CASE 1: Normal invoices (quantity inside ITEMS)
-#     # ----------------------------------------
-#     qty_pattern = r"\d+,\d{2}"
-
-#     if re.search(qty_pattern, block):
-
-#         raw_items = re.split(r"\n(?=.*\d+,\d{2})", block)
-
-#         descriptions = []
-
-#         for raw in raw_items:
-#             raw = raw.strip()
-#             if not raw:
-#                 continue
-
-#             raw = re.sub(qty_pattern, "", raw)
-#             raw = re.sub(r"^\d+[\.:]?\s*", "", raw)
-#             raw = re.sub(r"\s+", " ", raw).strip()
-
-#             descriptions.append(raw)
-
-#         # Extract per-item gross list (from Gross worth section)
-#         gross_values = re.findall(
-#             r"Gross\s*worth[\s\S]*?\n([\d\s,]+)\n",
-#             text,
-#             re.IGNORECASE
-#         )
-
-#         gross_numbers = re.findall(r"\d+,\d{2}", text)
-
-#         # Remove final total
-#         total = extract_total(text)
-#         gross_prices = [
-#             float(v.replace(",", "."))
-#             for v in gross_numbers
-#             if float(v.replace(",", ".")) != total
-#         ]
-
-#         gross_prices = gross_prices[-len(descriptions):]
-
-#         for i in range(min(len(descriptions), len(gross_prices))):
-#             items.append({
-#                 "name": descriptions[i],
-#                 "price": gross_prices[i]
-#             })
-
-#         return items
-
-#     # ----------------------------------------
-#     # CASE 2: Single-item invoice (like 33931957)
-#     # ----------------------------------------
-
-#     # Extract description
-#     desc = re.sub(r"^\d+[\.:]?\s*", "", block)
-#     desc = re.sub(r"\s+", " ", desc).strip()
-
-#     # Extract inline summary row gross (last value in summary line)
-#     summary_row = re.search(
-#         r"\d+,\d{2}\s+each\s+\d+,\d{2}\s+\d+,\d{2}\s+\d+%\s+(\d+,\d{2})",
-#         text,
-#         re.IGNORECASE
-#     )
-
-#     if summary_row:
-#         price = float(summary_row.group(1).replace(",", "."))
-#         items.append({
-#             "name": desc,
-#             "price": price
-#         })
-
-
-#     return items
 
 # =========================
 # CATEGORIZATION
