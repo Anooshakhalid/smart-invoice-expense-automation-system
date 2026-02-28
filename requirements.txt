@@ -3,3 +3,5 @@ Pillow
 pandas
 watchdog
 opencv-python
+pdf2image
+pdfplumber
