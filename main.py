@@ -6,6 +6,7 @@ from watchdog.events import FileSystemEventHandler
 from ocr_extraction import process_invoice
 from utils import save_db, load_db
 from pdf_extraction import process_pdf_invoice
+from email_service import send_invoice_email
 
 INCOMING_DIR = "invoices/incoming"
 PROCESSED_DIR = "invoices/processed"
@@ -27,6 +28,10 @@ class InvoiceHandler(FileSystemEventHandler):
                 db = load_db()
                 db["invoices"].append(invoice)
                 save_db(db)
+
+                # Send email notification
+                send_invoice_email(invoice)
+
             shutil.move(path, PROCESSED_DIR)
             print("Processed:", os.path.basename(path))
         except Exception as e:
