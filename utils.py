@@ -9,23 +9,40 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 CATEGORY_RULES = {
     "technology": [
-        "computer", "pc", "desktop", "laptop", "intel", "nvidia", "ssd", "ram",
-        "monitor", "wii", "nintendo", "gameboy", "controller", "console",
-        "gaming", "keyboard", "mouse", "vr-ready", "graphics", "printer"
+        "smart phone", "phone", "voip", "signal booster",
+        "fax", "fax machine", "wireless fax","Dell","COMPUTER",
+        "copier", "copy machine", "personal copier","Controller",
+        "printer", "receipt printer", "card printer",
+        "inkjet", "laser", "digital", "computer table", "keyboard", "mouse",
+        "epson", "canon", "brother", "hewlett", "hp","Projector",
+        "motorola", "nokia", "samsung", "cisco",
+        "startech", "konica", "panasonic","PlayStation","Xbox","Console","Games","Apple","Ink"
     ],
-    "fashion": [
-        "shoes", "sneakers", "boots", "sandals", "heels", "flats",
-        "dress", "shirt", "blouse", "pants", "jeans", "jacket", "coat",
-        "hoodie", "t-shirt", "skirt", "sweater", "tunics", "leggings",
-        "accessories", "belt", "scarf", "hat", "cap", "gloves", "mask",
-        "fashion", "maxmara", "boden", "michael kors", "xhiliration",
-        "psychedelic", "hawaiian", "striped", "knitted", "wrap"
-    ],
+
     "home essentials": [
-        "chair", "table", "sofa", "couch", "cabinet", "shelf", "lamp",
-        "rug", "bedding", "mattress", "pan", "plate", "cup", "knife",
-        "fork", "spoon", "blender", "kettle", "towel", "tissue",
-        "mask", "detergent", "soap", "cleaning", "bath", "books"
+        "chair", "armchair", "leather armchair",
+        "rocking chair", "swivel stool",
+        "table", "training table", "round table",
+        "bookcase", "library",
+        "cabinet", "shelf", "floating shelf",
+        "file cart", "Woody","Glass","Bottle"
+        
+        "wood", "metal", "pine","Microwave",
+        
+        "towel", "tissue","Wine",
+        
+        "storage", "doors","Carpets"
+    ],
+
+    "fashion": [
+        "shoes", "sneakers", "boots", "sandals",
+        "dress", "shirt", "pants", "jeans",
+        "jacket", "coat", "hoodie", "t-shirt",
+        "belt", "scarf", "hat", "gloves" ,"Boys", "Jordan","Sleepwear","Unisex"
+    ],
+    "books" : [
+        "by" , ":", "The" ,"Your" ,"A" ,"Edition" ,"of" ,"Analysis", "Articles",
+
     ]
 }
 

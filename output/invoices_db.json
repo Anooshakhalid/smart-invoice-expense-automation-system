@@ -1,0 +1,1804 @@
+{
+  "invoices": [
+    {
+      "invoice_id": "be194d7b-f4d6-4002-8a2e-f21bdcc71bbe",
+      "invoice_no": "6817",
+      "vendor": "Aaron Hawkins",
+      "date": "10/23/2012",
+      "total_amount": 10672.3,
+      "items": [
+        {
+          "name": "Samsung Smart Phone, VoIP",
+          "price": 2120.8,
+          "category": "technology"
+        }
+      ],
+      "_hash": "781a32a202a3899647b1d800ee5ec4d6"
+    },
+    {
+      "invoice_id": "e6fb84b5-1303-4fdc-a52c-5ab9ea743368",
+      "invoice_no": "17043",
+      "vendor": "Sara Luxemburg",
+      "date": "11/30/2012",
+      "total_amount": 9550.74,
+      "items": [
+        {
+          "name": "Brother Wireless Fax, Laser",
+          "price": 1894.05,
+          "category": "technology"
+        }
+      ],
+      "_hash": "66246e2fad8d7a67ad1d19a6f12ac60f"
+    },
+    {
+      "invoice_id": "0b2d6b99-c1b0-4200-9907-a23d1bf199da",
+      "invoice_no": "51080",
+      "vendor": "Sara Luxemburg",
+      "date": "10/30/2012",
+      "total_amount": 6057.53,
+      "items": [
+        {
+          "name": "SAFCO Swivel Stool, Black",
+          "price": 993.06,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "99439a66bcbd3a9835233bdbd547a255"
+    },
+    {
+      "invoice_id": "fac1b37c-f6de-47d1-94e7-9f9ce7cc4087",
+      "invoice_no": "19933",
+      "vendor": "Sarah Bern",
+      "date": "12/07/2012",
+      "total_amount": 5975.58,
+      "items": [
+        {
+          "name": "Apple Audio Dock, with Caller ID",
+          "price": 993.0,
+          "category": "uncategorized"
+        }
+      ],
+      "_hash": "7ed65281f882c9a7e821f69a31c31632"
+    },
+    {
+      "invoice_id": "85c6ba79-9206-41e8-8f82-1f5fcd99a796",
+      "invoice_no": "23277",
+      "vendor": "Sarah Bern",
+      "date": "10/26/2012",
+      "total_amount": 12115.13,
+      "items": [
+        {
+          "name": "HP Copy Machine, Color",
+          "price": 1693.23,
+          "category": "technology"
+        }
+      ],
+      "_hash": "1a1892027bedaf60985d4b8b072c150f"
+    },
+    {
+      "invoice_id": "2ad1e3a3-7d87-4115-9bdc-89227cbcfb0b",
+      "invoice_no": "23278",
+      "vendor": "Sarah Bern",
+      "date": "10/26/2012",
+      "total_amount": 15099.29,
+      "items": [
+        {
+          "name": "Ikea Classic Bookcase, Traditional",
+          "price": 2470.5,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "1c0729c3a3ff73eab55d0e197faec753"
+    },
+    {
+      "invoice_id": "78bc339e-f184-49b5-a3e3-737f697094c2",
+      "invoice_no": "24394",
+      "vendor": "Sarah Bern",
+      "date": "12/28/2012",
+      "total_amount": 652.46,
+      "items": [
+        {
+          "name": "Motorola Smart Phone, Cordless",
+          "price": 578.5,
+          "category": "technology"
+        }
+      ],
+      "_hash": "70abde1e86c1e9615ead4b31dc3fdb70"
+    },
+    {
+      "invoice_id": "2cb3fb42-8b6d-44e7-8c4d-5f26c2912dae",
+      "invoice_no": "24395",
+      "vendor": "Sarah Bern",
+      "date": "12/28/2012",
+      "total_amount": 727.89,
+      "items": [
+        {
+          "name": "Safco Floating Shelf Set, Metal",
+          "price": 353.16,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "26d4a134e02d54809b42442eb6fa9f7a"
+    },
+    {
+      "invoice_id": "2e0302c7-cee0-4114-8f5a-ca6596a60553",
+      "invoice_no": "4375",
+      "vendor": "Sarah Brown",
+      "date": "02/07/2013",
+      "total_amount": 2015.09,
+      "items": [
+        {
+          "name": "Brother Fax Machine, Laser",
+          "price": 635.81,
+          "category": "technology"
+        }
+      ],
+      "_hash": "92aaca480154895d39cc59e78d0e2f24"
+    },
+    {
+      "invoice_id": "fb839c91-aa09-49f8-ad86-6df1241e72ce",
+      "invoice_no": "12798",
+      "vendor": "Sarah Foster",
+      "date": "05/03/2012",
+      "total_amount": 6522.28,
+      "items": [
+        {
+          "name": "Okidata Inkjet, Wireless",
+          "price": 1413.45,
+          "category": "technology"
+        }
+      ],
+      "_hash": "6c25f5c3120819841d64c1c17589e9fd"
+    },
+    {
+      "invoice_id": "f9e44ae1-bdd6-41c9-8d92-5819a28f71d0",
+      "invoice_no": "523",
+      "vendor": "Sarah Jordon",
+      "date": "10/12/2012",
+      "total_amount": 1997.95,
+      "items": [
+        {
+          "name": "Brother Fax Machine, Digital",
+          "price": 635.09,
+          "category": "technology"
+        }
+      ],
+      "_hash": "c5e50b5d76213222cb468d38861c6031"
+    },
+    {
+      "invoice_id": "1aa0f859-ecb5-439c-8786-e88abe3b9823",
+      "invoice_no": "16066",
+      "vendor": "Scot Coram",
+      "date": "01/22/2013",
+      "total_amount": 4781.98,
+      "items": [
+        {
+          "name": "Lesro Round Table, Fully Assembled",
+          "price": 1451.14,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "a77e5983a899e64debe2b41c34e31ad5"
+    },
+    {
+      "invoice_id": "a9610a9e-2ef4-4eea-9824-1c694865fd22",
+      "invoice_no": "29686",
+      "vendor": "Scot Coram",
+      "date": "06/21/2012",
+      "total_amount": 16022.83,
+      "items": [
+        {
+          "name": "Safco Classic Bookcase, Pine",
+          "price": 2637.0,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "a45fcadc0c8b717c709cdce9d4a62420"
+    },
+    {
+      "invoice_id": "33a243fd-4370-432c-9e09-9b4dc73f0bab",
+      "invoice_no": "29688",
+      "vendor": "Scot Coram",
+      "date": "06/21/2012",
+      "total_amount": 2662.21,
+      "items": [
+        {
+          "name": "Motorola Smart Phone, Cordless",
+          "price": 1285.56,
+          "category": "technology"
+        }
+      ],
+      "_hash": "90cca06665f3c9cf67dee01025b6560e"
+    },
+    {
+      "invoice_id": "7d61f541-4629-4a31-893c-ff455b6c384a",
+      "invoice_no": "42964",
+      "vendor": "Scot Coram",
+      "date": "03/02/2012",
+      "total_amount": 16492.73,
+      "items": [
+        {
+          "name": "StarTech Card Printer, White",
+          "price": 1619.1,
+          "category": "technology"
+        }
+      ],
+      "_hash": "e7dd43682c3d2209bcd5024d10eea750"
+    },
+    {
+      "invoice_id": "d337dabd-a299-4744-826e-728f04a571fe",
+      "invoice_no": "10963",
+      "vendor": "Scot Wooten",
+      "date": "03/07/2013",
+      "total_amount": 5338.08,
+      "items": [
+        {
+          "name": "Hewlett Fax Machine, Color",
+          "price": 1285.44,
+          "category": "technology"
+        }
+      ],
+      "_hash": "249b67d567bf1c3ec7b9817f77b8a226"
+    },
+    {
+      "invoice_id": "28277470-439d-4691-972a-a158ecb2609f",
+      "invoice_no": "46910",
+      "vendor": "Sean Miller",
+      "date": "11/24/2012",
+      "total_amount": 5265.99,
+      "items": [
+        {
+          "name": "Hewlett Fax Machine, Color",
+          "price": 1285.44,
+          "category": "technology"
+        }
+      ],
+      "_hash": "459096040abf8076c3a6c5556589dd28"
+    },
+    {
+      "invoice_id": "355f7d6d-7e33-4239-9558-699e1f38b1f6",
+      "invoice_no": "50056",
+      "vendor": "Sean Miller",
+      "date": "09/26/2012",
+      "total_amount": 5249.15,
+      "items": [
+        {
+          "name": "Konica Inkjet, Wireless",
+          "price": 1253.76,
+          "category": "technology"
+        }
+      ],
+      "_hash": "3733a53760d406830c0e35fd882f96c9"
+    },
+    {
+      "invoice_id": "081dd3fe-6814-42e8-9f6b-645a8d7b12b2",
+      "invoice_no": "8439",
+      "vendor": "Sean O'Donnell",
+      "date": "06/16/2012",
+      "total_amount": 2123.84,
+      "items": [
+        {
+          "name": "Hon Round Table, Adjustable Height",
+          "price": 828.96,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "6d12f83acc846d2038abe61643911e75"
+    },
+    {
+      "invoice_id": "7c413536-1cf5-41ea-80cd-db5bd6a33fd0",
+      "invoice_no": "8440",
+      "vendor": "Sean O'Donnell",
+      "date": "06/16/2012",
+      "total_amount": 925.49,
+      "items": [
+        {
+          "name": "Canon Fax Machine, High-Speed",
+          "price": 421.28,
+          "category": "technology"
+        }
+      ],
+      "_hash": "e8aa1d88fcbb83fe1fe0ee9bd587977e"
+    },
+    {
+      "invoice_id": "908e2120-f8c5-4ea3-baa4-a283247af100",
+      "invoice_no": "10372",
+      "vendor": "Sean O'Donnell",
+      "date": "05/17/2012",
+      "total_amount": 6438.4,
+      "items": [
+        {
+          "name": "Office Star Swivel Stool, Adjustable",
+          "price": 1058.58,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "35ff07992cd63b81526e487fe320e9cd"
+    },
+    {
+      "invoice_id": "d603225c-71e5-4c2f-bf17-65c61fc4a4a0",
+      "invoice_no": "24939",
+      "vendor": "Sean Wendt",
+      "date": "06/07/2012",
+      "total_amount": 7426.59,
+      "items": [
+        {
+          "name": "Cisco Smart Phone, Full Size",
+          "price": 2166.9,
+          "category": "technology"
+        }
+      ],
+      "_hash": "857343896a650a93ffc632af19d8a725"
+    },
+    {
+      "invoice_id": "ea74ed88-3944-4c54-aac6-e1a2aa4d2adf",
+      "invoice_no": "21252",
+      "vendor": "Seth Vernon",
+      "date": "02/01/2013",
+      "total_amount": 10072.85,
+      "items": [
+        {
+          "name": "Samsung Speaker Phone, with Caller ID",
+          "price": 1109.16,
+          "category": "technology"
+        }
+      ],
+      "_hash": "175a0a1eac54668bfbb25182a0809968"
+    },
+    {
+      "invoice_id": "f580894a-b0ed-4c68-b9eb-2f4d4efb3cbe",
+      "invoice_no": "30140",
+      "vendor": "Shahid Shariari",
+      "date": "11/15/2012",
+      "total_amount": 748.36,
+      "items": [
+        {
+          "name": "Safco 3-Shelf Cabinet, Traditional",
+          "price": 337.68,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "20c7fc952b82ced8ae4ed206683d6c96"
+    },
+    {
+      "invoice_id": "f23f6441-f75b-49fe-8c67-07c846bc7a85",
+      "invoice_no": "31134",
+      "vendor": "Shaun Weien",
+      "date": "05/22/2012",
+      "total_amount": 1955.03,
+      "items": [
+        {
+          "name": "Brother Fax Machine, Color",
+          "price": 767.95,
+          "category": "technology"
+        }
+      ],
+      "_hash": "b1e7340b04e9e7244cde23beb8645399"
+    },
+    {
+      "invoice_id": "1e9a7176-dc8b-40cc-8f0c-00079e6e4bd4",
+      "invoice_no": "9012",
+      "vendor": "Shirley Daniels",
+      "date": "04/06/2012",
+      "total_amount": 1844.28,
+      "items": [
+        {
+          "name": "Hon Executive Leather Armchair, Black",
+          "price": 731.42,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "ffb56a62c5bad35c3fbf1020b9bcd3f8"
+    },
+    {
+      "invoice_id": "414702f8-8722-4ff9-8a10-82dcd365a0ef",
+      "invoice_no": "14495",
+      "vendor": "Shirley Schmidt",
+      "date": "12/27/2012",
+      "total_amount": 4012.61,
+      "items": [
+        {
+          "name": "Safco Classic Bookcase, Traditional",
+          "price": 1314.45,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "a94138093b217741121913b1665a291b"
+    },
+    {
+      "invoice_id": "914f34d3-c9e2-4e12-ac63-a0e4c12a24ee",
+      "invoice_no": "4958",
+      "vendor": "Shui Tom",
+      "date": "11/21/2012",
+      "total_amount": 2384.15,
+      "items": [
+        {
+          "name": "Brother Wireless Fax, High-Speed",
+          "price": 752.51,
+          "category": "technology"
+        }
+      ],
+      "_hash": "943a08415d2f7d57f2b0a1d74e2ab34e"
+    },
+    {
+      "invoice_id": "5a679cb9-f931-4c7b-b250-73cf3e4c8675",
+      "invoice_no": "9960",
+      "vendor": "Shui Tom",
+      "date": "07/27/2012",
+      "total_amount": 5420.24,
+      "items": [
+        {
+          "name": "Hon Computer Table, Fully Assembled",
+          "price": 1312.64,
+          "category": "technology"
+        }
+      ],
+      "_hash": "97d9d8f8b45a83eb10e534e00124a391"
+    },
+    {
+      "invoice_id": "05a31d82-b37e-4b1b-895a-c487cf979df4",
+      "invoice_no": "26367",
+      "vendor": "Stefania Perrino",
+      "date": "12/19/2012",
+      "total_amount": 11512.74,
+      "items": [
+        {
+          "name": "Canon Fax Machine, High-Speed",
+          "price": 1899.54,
+          "category": "technology"
+        }
+      ],
+      "_hash": "68409df29d8150a8009e4ff7474fe5ba"
+    },
+    {
+      "invoice_id": "04fbdafc-1a60-4129-b009-053dfddf9ccc",
+      "invoice_no": "26375",
+      "vendor": "Stefania Perrino",
+      "date": "12/19/2012",
+      "total_amount": 11533.2,
+      "items": [
+        {
+          "name": "Novimex Executive Leather Armchair, Adjustable",
+          "price": 2277.6,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "6b1ec536974a0b3322b59bf9d391c13a"
+    },
+    {
+      "invoice_id": "20e929e2-8824-4d12-8553-10840d3c2380",
+      "invoice_no": "26376",
+      "vendor": "Stefania Perrino",
+      "date": "12/19/2012",
+      "total_amount": 12273.59,
+      "items": [
+        {
+          "name": "Canon Fax and Copier, High-Speed",
+          "price": 1516.32,
+          "category": "technology"
+        }
+      ],
+      "_hash": "c741e23d548f7af9d65d6647e98996e2"
+    },
+    {
+      "invoice_id": "7bc0bbd8-1c67-439d-989a-625bcd9abc28",
+      "invoice_no": "22489",
+      "vendor": "Steve Carroll",
+      "date": "11/09/2012",
+      "total_amount": 1614.39,
+      "items": [
+        {
+          "name": "Dania Library with Doors, Traditional",
+          "price": 724.8,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "d9467805f23620a12b6da44a7c18d1aa"
+    },
+    {
+      "invoice_id": "da947a61-d469-4ad9-9de1-3985f47f4ab8",
+      "invoice_no": "27639",
+      "vendor": "Steve Carroll",
+      "date": "03/07/2012",
+      "total_amount": 4069.53,
+      "items": [
+        {
+          "name": "Chromcraft Computer Table, with Bottom Storage",
+          "price": 1330.29,
+          "category": "technology"
+        }
+      ],
+      "_hash": "46f7b5035614ba7e09ff8e716f695f58"
+    },
+    {
+      "invoice_id": "97002ac0-ccf9-41cf-8ff0-f11d0bdd1b10",
+      "invoice_no": "13707",
+      "vendor": "Steve Chapman",
+      "date": "05/04/2012",
+      "total_amount": 4280.48,
+      "items": [
+        {
+          "name": "Hewlett Copy Machine, Color",
+          "price": 1047.48,
+          "category": "technology"
+        }
+      ],
+      "_hash": "7668b924967a87a485c044c8b71156b4"
+    },
+    {
+      "invoice_id": "2f5ea6f4-0c31-4c51-a4d0-3668232fcc38",
+      "invoice_no": "27922",
+      "vendor": "Steve Nguyen",
+      "date": "09/22/2012",
+      "total_amount": 7904.28,
+      "items": [
+        {
+          "name": "Hewlett Wireless Fax, Digital",
+          "price": 1709.24,
+          "category": "technology"
+        }
+      ],
+      "_hash": "591c42c3b9bc1777ef5c57ebff56bf8a"
+    },
+    {
+      "invoice_id": "423e23a1-1ca3-4013-8d9b-96eb00dc0c6e",
+      "invoice_no": "1702",
+      "vendor": "Steven Cartwright",
+      "date": "09/14/2012",
+      "total_amount": 5301.27,
+      "items": [
+        {
+          "name": "Barricks Computer Table, Fully Assembled",
+          "price": 1274.24,
+          "category": "technology"
+        }
+      ],
+      "_hash": "0cf399599935620e3a2f0103b1b139a0"
+    },
+    {
+      "invoice_id": "6ba06e92-7064-4a89-a510-58c5d9404e0e",
+      "invoice_no": "14184",
+      "vendor": "Steven Roelle",
+      "date": "07/17/2012",
+      "total_amount": 4928.68,
+      "items": [
+        {
+          "name": "StarTech Inkjet, Wireless",
+          "price": 1207.08,
+          "category": "technology"
+        }
+      ],
+      "_hash": "c1cd72dc39cf7f9a8996806989e6198c"
+    },
+    {
+      "invoice_id": "bde757d6-1f13-4a27-9fdd-f2e1904418ac",
+      "invoice_no": "9240",
+      "vendor": "Steven Ward",
+      "date": "12/07/2012",
+      "total_amount": 9184.5,
+      "items": [
+        {
+          "name": "Nokia Signal Booster, VoIP",
+          "price": 910.6,
+          "category": "technology"
+        }
+      ],
+      "_hash": "fb97df46c71cb23b6ef87c1ad4b2c0ef"
+    },
+    {
+      "invoice_id": "5c5066cc-418b-4b3b-af71-48a40989fae8",
+      "invoice_no": "28189",
+      "vendor": "Stewart Carmichael",
+      "date": "06/02/2012",
+      "total_amount": 1836.64,
+      "items": [
+        {
+          "name": "Belkin Keyboard, Programmable",
+          "price": 384.21,
+          "category": "technology"
+        }
+      ],
+      "_hash": "6cb0116a868e31c04f05d31e2e365ecf"
+    },
+    {
+      "invoice_id": "59fba8d6-c54f-4e70-b7c8-189e81973587",
+      "invoice_no": "11014",
+      "vendor": "Stuart Calhoun",
+      "date": "08/17/2012",
+      "total_amount": 9482.3,
+      "items": [
+        {
+          "name": "Hewlett Copy Machine, High-Speed",
+          "price": 1568.84,
+          "category": "technology"
+        }
+      ],
+      "_hash": "ce15679589e45974f839da6ebd038afd"
+    },
+    {
+      "invoice_id": "ae4594b4-7629-4fe1-8b35-7112788d144c",
+      "invoice_no": "20954",
+      "vendor": "Stuart Calhoun",
+      "date": "02/05/2013",
+      "total_amount": 3916.43,
+      "items": [
+        {
+          "name": "Dania Classic Bookcase, Pine",
+          "price": 1236.33,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "44bf72d0d25ddf92220f8ddabf8a2da5"
+    },
+    {
+      "invoice_id": "0fe89974-a3e3-4c96-a14b-e4ef178b55ea",
+      "invoice_no": "20955",
+      "vendor": "Stuart Calhoun",
+      "date": "02/05/2013",
+      "total_amount": 19302.32,
+      "items": [
+        {
+          "name": "Safco Library with Doors, Pine",
+          "price": 2737.98,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "30c7170a2196a36a52482b4d6a423af3"
+    },
+    {
+      "invoice_id": "1ac4deff-fbdb-496a-a945-763a86ad5f18",
+      "invoice_no": "10365",
+      "vendor": "Sue Ann",
+      "date": "03/30/2012",
+      "total_amount": 16103.52,
+      "items": [
+        {
+          "name": "Sauder Classic Bookcase, Pine",
+          "price": 2624.04,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "67ab5bdd301bc22880a63e8a9af3294a"
+    },
+    {
+      "invoice_id": "27242d66-2c01-4e4e-bc6c-8314b0a7e6cf",
+      "invoice_no": "5917",
+      "vendor": "Sung Chung",
+      "date": "11/27/2012",
+      "total_amount": 1821.71,
+      "items": [
+        {
+          "name": "Panasonic Printer, Durable",
+          "price": 533.22,
+          "category": "technology"
+        }
+      ],
+      "_hash": "b43b4efb567f9944dfaa4eb532a44a07"
+    },
+    {
+      "invoice_id": "e23a46c2-3991-4dfb-80ba-701dbb10bc48",
+      "invoice_no": "17380",
+      "vendor": "Sung Chung",
+      "date": "06/10/2012",
+      "total_amount": 10652.75,
+      "items": [
+        {
+          "name": "Ikea Classic Bookcase, Metal",
+          "price": 2056.05,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "dd5faa5ef37b7a6fd0ee201402030367"
+    },
+    {
+      "invoice_id": "84fbb5c1-54bb-487a-98fa-86bb66ba828a",
+      "invoice_no": "11968",
+      "vendor": "Susan MacKendrick",
+      "date": "01/08/2013",
+      "total_amount": 2851.16,
+      "items": [
+        {
+          "name": "Epson Inkjet, Durable",
+          "price": 919.89,
+          "category": "technology"
+        }
+      ],
+      "_hash": "3a15783ead7b87d29a846f041fb945a8"
+    },
+    {
+      "invoice_id": "4081c73b-f395-40c0-b2b0-587bb6398b8d",
+      "invoice_no": "15103",
+      "vendor": "Susan Vittorini",
+      "date": "11/14/2012",
+      "total_amount": 1527.4,
+      "items": [
+        {
+          "name": "Dania Library with Doors, Pine",
+          "price": 727.5,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "03d51a737bc4a30b6bda925633671ebd"
+    },
+    {
+      "invoice_id": "69159b24-22b9-4d61-9182-e698e735a023",
+      "invoice_no": "25949",
+      "vendor": "Susan Vittorini",
+      "date": "06/02/2012",
+      "total_amount": 5348.85,
+      "items": [
+        {
+          "name": "Harbour Creations Swivel Stool, Red",
+          "price": 972.65,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "fa11eeaae76e5fe397c2c5e3fdb16a96"
+    },
+    {
+      "invoice_id": "c649feca-6461-4e66-866d-9ea02c4a4f42",
+      "invoice_no": "2725",
+      "vendor": "Suzanne McNair",
+      "date": "11/16/2012",
+      "total_amount": 1685.42,
+      "items": [
+        {
+          "name": "Brother Copy Machine, Color",
+          "price": 526.41,
+          "category": "technology"
+        }
+      ],
+      "_hash": "da9f38de11dfc2a60f4d08530a4e8129"
+    },
+    {
+      "invoice_id": "e6c76f7c-d320-4baf-bbd6-1dcd5eaf99ad",
+      "invoice_no": "25931",
+      "vendor": "Tamara Chand",
+      "date": "05/05/2012",
+      "total_amount": 3469.66,
+      "items": [
+        {
+          "name": "Brother Wireless Fax, High-Speed",
+          "price": 1131.03,
+          "category": "technology"
+        }
+      ],
+      "_hash": "e7167c7566b2914f133664549675730c"
+    },
+    {
+      "invoice_id": "3472d327-4fe8-46c1-b4b1-c1b99acd82c2",
+      "invoice_no": "41648",
+      "vendor": "Tamara Chand",
+      "date": "06/07/2012",
+      "total_amount": 601.95,
+      "items": [
+        {
+          "name": "Hon Executive Leather Armchair, Adjustable",
+          "price": 454.71,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "8faa980006e8f939fb2e6ca284de625f"
+    },
+    {
+      "invoice_id": "9d7e4e9a-40d1-4a01-bcf6-e1016795ee63",
+      "invoice_no": "49349",
+      "vendor": "Tamara Chand",
+      "date": "10/21/2012",
+      "total_amount": 2091.45,
+      "items": [
+        {
+          "name": "Sharp Ink, Color",
+          "price": 503.4,
+          "category": "uncategorized"
+        }
+      ],
+      "_hash": "47ec3d31498d81d9e6e5e8aec459e9a8"
+    },
+    {
+      "invoice_id": "2ef30842-9103-4781-be88-c501e0ac91f7",
+      "invoice_no": "19902",
+      "vendor": "Tamara Willingham",
+      "date": "09/20/2012",
+      "total_amount": 3591.43,
+      "items": [
+        {
+          "name": "Safco Classic Bookcase, Metal",
+          "price": 1181.55,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "5d4ceb576fedb92cd1614782dd4e3195"
+    },
+    {
+      "invoice_id": "06346d8f-b484-4446-b240-ab5ee6f8a095",
+      "invoice_no": "28948",
+      "vendor": "Tamara Willingham",
+      "date": "08/17/2012",
+      "total_amount": 2870.97,
+      "items": [
+        {
+          "name": "Hoover Microwave, Black",
+          "price": 924.21,
+          "category": "uncategorized"
+        }
+      ],
+      "_hash": "75dc4654a7602f5684902341fff2a40f"
+    },
+    {
+      "invoice_id": "7923748a-43bd-47ec-9cec-6dc43287eb53",
+      "invoice_no": "9226",
+      "vendor": "Ted Trevino",
+      "date": "11/11/2012",
+      "total_amount": 925.25,
+      "items": [
+        {
+          "name": "Harbour Creations Executive Leather Armchair, Adjustable",
+          "price": 507.84,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "78abc3f212952e0798f769599882d48a"
+    },
+    {
+      "invoice_id": "10c208c7-43b9-4082-ae9f-3ec41a8f6bf5",
+      "invoice_no": "5732",
+      "vendor": "Theone Pippenger",
+      "date": "10/25/2012",
+      "total_amount": 10809.83,
+      "items": [
+        {
+          "name": "Apple Smart Phone, Full Size",
+          "price": 2120.7,
+          "category": "technology"
+        }
+      ],
+      "_hash": "e6b8efbfcae65183c86c33d5665ad77d"
+    },
+    {
+      "invoice_id": "eb082cae-01ec-44d7-8503-bed9771db2c0",
+      "invoice_no": "6998",
+      "vendor": "Theone Pippenger",
+      "date": "12/10/2012",
+      "total_amount": 1998.12,
+      "items": [
+        {
+          "name": "Brother Fax Machine, High-Speed",
+          "price": 632.21,
+          "category": "technology"
+        }
+      ],
+      "_hash": "5a9a1b0b81ee6cd492dd2672fe018f0f"
+    },
+    {
+      "invoice_id": "8a50f8fc-b090-4bca-ad9c-b3c5e21ccfd9",
+      "invoice_no": "13171",
+      "vendor": "Theone Pippenger",
+      "date": "01/03/2013",
+      "total_amount": 3448.54,
+      "items": [
+        {
+          "name": "Tenex File Cart, Single Width",
+          "price": 673.05,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "65855febf99b5241901561d22b6dbb0e"
+    },
+    {
+      "invoice_id": "26567b64-d534-4546-9d24-a91bc2c732aa",
+      "invoice_no": "25750",
+      "vendor": "Troy Staebel",
+      "date": "12/07/2012",
+      "total_amount": 4229.8,
+      "items": [
+        {
+          "name": "Brother Personal Copier, Digital",
+          "price": 769.66,
+          "category": "technology"
+        }
+      ],
+      "_hash": "50e5278e009ad0b6c481bf235ae2575c"
+    },
+    {
+      "invoice_id": "1eeb6e5b-1722-4bd4-9421-a77fdfd91937",
+      "invoice_no": "30584",
+      "vendor": "Troy Staebel",
+      "date": "01/31/2012",
+      "total_amount": 10413.48,
+      "items": [
+        {
+          "name": "Motorola Smart Phone, Cordless",
+          "price": 2571.12,
+          "category": "technology"
+        }
+      ],
+      "_hash": "624bdca48db4fa520d0f2a04e0e4f286"
+    },
+    {
+      "invoice_id": "08f07c22-6283-433f-bea9-e5e061dcccf4",
+      "invoice_no": "30585",
+      "vendor": "Troy Staebel",
+      "date": "01/31/2012",
+      "total_amount": 7773.25,
+      "items": [
+        {
+          "name": "Barricks Computer Table, Fully Assembled",
+          "price": 1917.24,
+          "category": "technology"
+        }
+      ],
+      "_hash": "9f219f2d1df8f1883fd33434b6ca7314"
+    },
+    {
+      "invoice_id": "4bc5fed2-62e1-477f-84fc-1f1ce561bc76",
+      "invoice_no": "15209",
+      "vendor": "Trudy Brown",
+      "date": "12/19/2012",
+      "total_amount": 1105.55,
+      "items": [
+        {
+          "name": "Office Star Rocking Chair, Red",
+          "price": 380.46,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "3d3bcd306aae59322373b12e2303fa1b"
+    },
+    {
+      "invoice_id": "ef35595c-3731-409b-80fd-27cf97c2fd4e",
+      "invoice_no": "15210",
+      "vendor": "Trudy Brown",
+      "date": "12/19/2012",
+      "total_amount": 2637.43,
+      "items": [
+        {
+          "name": "Sauder Floating Shelf Set, Pine",
+          "price": 705.35,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "e95f8abf8b7582301a5fddfe4fd2fc37"
+    },
+    {
+      "invoice_id": "06e95c43-a3b4-47e5-921c-0f555c6acf42",
+      "invoice_no": "17041",
+      "vendor": "Trudy Brown",
+      "date": "11/23/2012",
+      "total_amount": 4932.08,
+      "items": [
+        {
+          "name": "Canon Fax and Copier, Color",
+          "price": 963.9,
+          "category": "technology"
+        }
+      ],
+      "_hash": "3a2eeed79e4c30f509277a0b0bc22626"
+    },
+    {
+      "invoice_id": "955147e0-bbe2-444b-a9a1-cf3c558b929a",
+      "invoice_no": "17042",
+      "vendor": "Trudy Brown",
+      "date": "11/23/2012",
+      "total_amount": 1146.48,
+      "items": [
+        {
+          "name": "Epson Receipt Printer, Wireless",
+          "price": 351.09,
+          "category": "technology"
+        }
+      ],
+      "_hash": "aef7b0cce0c11b17ece982c542c6dbbe"
+    },
+    {
+      "invoice_id": "45ccb955-2e39-4f66-9e90-9f3ca2c64bc8",
+      "invoice_no": "21435",
+      "vendor": "Trudy Glocke",
+      "date": "01/25/2013",
+      "total_amount": 7325.56,
+      "items": [
+        {
+          "name": "Ikea 3-Shelf Cabinet, Mobile",
+          "price": 1014.72,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "ee0486f51175491d2cf7b7b3efdd5c46"
+    },
+    {
+      "invoice_id": "11c06e77-cb33-4568-99f8-52de8510aa33",
+      "invoice_no": "14380",
+      "vendor": "Trudy Schmidt",
+      "date": "01/10/2013",
+      "total_amount": 12725.04,
+      "items": [
+        {
+          "name": "Hewlett Fax Machine, High-Speed",
+          "price": 2004.16,
+          "category": "technology"
+        }
+      ],
+      "_hash": "543ad1baaa3823b9087ef1abae128c7f"
+    },
+    {
+      "invoice_id": "2a1de840-b13a-49a7-b653-f92c41f993c6",
+      "invoice_no": "19175",
+      "vendor": "Valerie Dominguez",
+      "date": "01/19/2013",
+      "total_amount": 718.64,
+      "items": [
+        {
+          "name": "Samsung Smart Phone, VoIP",
+          "price": 636.24,
+          "category": "technology"
+        }
+      ],
+      "_hash": "98af8a646495e8283dd3de569ba49df0"
+    },
+    {
+      "invoice_id": "d88d184a-2581-4680-b878-4bb1c919d957",
+      "invoice_no": "22655",
+      "vendor": "Valerie Takahito",
+      "date": "11/17/2012",
+      "total_amount": 6590.5,
+      "items": [
+        {
+          "name": "Hon Rocking Chair, Adjustable",
+          "price": 931.77,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "cc9350c9f2c412f3b2b59ac821573263"
+    },
+    {
+      "invoice_id": "b4d8037d-255a-422a-9080-1d4d9bb0859a",
+      "invoice_no": "17080",
+      "vendor": "Victoria Brennan",
+      "date": "11/29/2012",
+      "total_amount": 6922.52,
+      "items": [
+        {
+          "name": "Harbour Creations Chairmat, Black",
+          "price": 688.74,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "c70ff9604e100a1e017c4ffd51fc7cf2"
+    },
+    {
+      "invoice_id": "95cca470-9b12-40fe-92e3-b821c2a11af0",
+      "invoice_no": "30489",
+      "vendor": "Victoria Wilson",
+      "date": "12/15/2012",
+      "total_amount": 4416.46,
+      "items": [
+        {
+          "name": "Lesro Training Table, Fully Assembled",
+          "price": 1081.08,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "d6aaffa16d95577951cd962686b596f7"
+    },
+    {
+      "invoice_id": "7650680a-10c4-47c5-b8ac-76cd77f2950d",
+      "invoice_no": "5101",
+      "vendor": "Vivek Grady",
+      "date": "06/19/2012",
+      "total_amount": 9164.0,
+      "items": [
+        {
+          "name": "Hewlett Wireless Fax, Digital",
+          "price": 1516.28,
+          "category": "technology"
+        }
+      ],
+      "_hash": "39b123e995da32615192a30eec2f707b"
+    },
+    {
+      "invoice_id": "b8a137af-0f26-4e90-9347-310eeeabbf76",
+      "invoice_no": "20703",
+      "vendor": "Vivek Grady",
+      "date": "08/01/2012",
+      "total_amount": 1906.05,
+      "items": [
+        {
+          "name": "Novimex Executive Leather Armchair, Adjustable",
+          "price": 911.04,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "db1328016b6791f2acc5ac3f1b3c26b9"
+    },
+    {
+      "invoice_id": "40e09714-9a89-4d4f-b6c7-5da81e2be287",
+      "invoice_no": "3875",
+      "vendor": "Xylona Preis",
+      "date": "05/03/2012",
+      "total_amount": 22940.02,
+      "items": [
+        {
+          "name": "Hon Wood Table, with Bottom Storage",
+          "price": 2833.76,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "f51c006e0091c1463235ab5a7afcc1e0"
+    },
+    {
+      "invoice_id": "d3f29024-eaec-4788-a46a-cd48cad6c06a",
+      "invoice_no": "15577",
+      "vendor": "Xylona Preis",
+      "date": "12/04/2012",
+      "total_amount": 1717.28,
+      "items": [
+        {
+          "name": "StarTech Printer, Durable",
+          "price": 640.73,
+          "category": "technology"
+        }
+      ],
+      "_hash": "b1481822e33fb807fca6cd42552d9d0e"
+    },
+    {
+      "invoice_id": "6454caf5-5382-4227-b92e-d13635e2ff64",
+      "invoice_no": "5434",
+      "vendor": "Yana Sorensen",
+      "date": "05/31/2012",
+      "total_amount": 1031.66,
+      "items": [
+        {
+          "name": "Dania Library with Doors, Metal",
+          "price": 482.48,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "013eab330288e292fd820c720bc29bb2"
+    },
+    {
+      "invoice_id": "f503cd05-3851-4322-b26b-1bd9f975efee",
+      "invoice_no": "31061",
+      "vendor": "Yoseph Carroll",
+      "date": "11/30/2012",
+      "total_amount": 2921.43,
+      "items": [
+        {
+          "name": "Bevis Computer Table, Adjustable Height",
+          "price": 1181.02,
+          "category": "technology"
+        }
+      ],
+      "_hash": "b9969e5669afe906cefd887615f68350"
+    },
+    {
+      "invoice_id": "1afe6df6-0683-483e-97d0-4cd316605b3a",
+      "invoice_no": "18672",
+      "vendor": "Zuschuss Donatelli",
+      "date": "02/21/2012",
+      "total_amount": 2078.96,
+      "items": [
+        {
+          "name": "Barricks Round Table, with Bottom Storage",
+          "price": 1003.02,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "d2e0e25ad2e90512ef343ffdfeeabd87"
+    },
+    {
+      "invoice_id": "fac30527-c122-4139-b0dd-9803832c79a3",
+      "invoice_no": "01234",
+      "vendor": "Jhon Doe",
+      "date": "01/01/2030",
+      "total_amount": 300.0,
+      "items": [
+        {
+          "name": "Mouse",
+          "price": 100.0,
+          "category": "technology"
+        },
+        {
+          "name": "Keyboard",
+          "price": 50.0,
+          "category": "technology"
+        }
+      ],
+      "_hash": "3fbfc0dec2760837491f33ded6ddbecc"
+    },
+    {
+      "invoice_id": "09ccfa52-bee6-4b6a-972e-22efa13bed67",
+      "invoice_no": "9801234",
+      "vendor": "Tamara Willingham",
+      "date": "01/01/2026",
+      "total_amount": 15.0,
+      "items": [
+        {
+          "name": "towel",
+          "price": 10.0,
+          "category": "home essentials"
+        },
+        {
+          "name": "tissue",
+          "price": 5.0,
+          "category": "home essentials"
+        }
+      ],
+      "_hash": "795bfc3ef5b93b3ccf4fffc45775a4ce"
+    },
+    {
+      "invoice_id": "27065f9d-1052-4d9b-b1ed-1bb765c00b5f",
+      "invoice_no": "78566408",
+      "vendor": "Clark PLC",
+      "date": "03/18/2016",
+      "total_amount": 228.68,
+      "items": [
+        {
+          "name": "Oomphies Boys Ankle Boots Shoes Gray Green Kids Size 2 EUC",
+          "price": 26.38,
+          "category": "fashion"
+        },
+        {
+          "name": "Boys water/beach/pool black orange and blue hook and loop size 13-1 shoes",
+          "price": 2.6,
+          "category": "fashion"
+        },
+        {
+          "name": "oe Lotto Soccer Turf Shoes 6 Black Vincente Turf Jr Indoor Outdoor Futbol Cleats",
+          "price": 65.97,
+          "category": "fashion"
+        },
+        {
+          "name": "Blueteeth LED Galaxy Projector Starry Night Lamp Star Projection Night Light USB",
+          "price": 31.34,
+          "category": "uncategorized"
+        },
+        {
+          "name": "Se Joma Boys Youth Gol-102 Soccer Cleats Shoes Size 4 White Red Futbol NEW",
+          "price": 65.97,
+          "category": "fashion"
+        },
+        {
+          "name": "Adult Kids Pokemon Pikachu Kigurumi Pajama Cosplay Christmas Costume Sleepwear",
+          "price": 36.43,
+          "category": "uncategorized"
+        }
+      ],
+      "_hash": "4fe39432840fd12e7733f24f4be3664f"
+    },
+    {
+      "invoice_id": "dada549f-3242-440d-b66b-3f307601acf2",
+      "invoice_no": "53695084",
+      "vendor": "Diaz, Warren and Carter Black, Smith and Bass",
+      "date": "10/25/2015",
+      "total_amount": 2012.51,
+      "items": [
+        {
+          "name": "Dell Optiplex Desktop Computer each with Dual 19\" LCD Monitors Windows 10 Pro",
+          "price": 824.73,
+          "category": "uncategorized"
+        },
+        {
+          "name": "HP Windows 10 Pro Desktop each Computer Intel QUAD CORE i5 Wifi, Keyboard & Mouse",
+          "price": 747.78,
+          "category": "technology"
+        },
+        {
+          "name": "3: STUDENT/WORK COMPUTER each WORKSTATION WINDOWS 10 PRO",
+          "price": 440.0,
+          "category": "uncategorized"
+        }
+      ],
+      "_hash": "42e90c539e423f348324bd8c13ef221d"
+    },
+    {
+      "invoice_id": "88bd2780-1d0a-4eeb-9fe3-d687111d1eb7",
+      "invoice_no": "81153047",
+      "vendor": "White, Watkins and Barton",
+      "date": "12/12/2020",
+      "total_amount": 203.19,
+      "items": [
+        {
+          "name": "Rectangle Area Rug Wood Grain Carpet Mat for Living Room Bedroom - 180x60cm",
+          "price": 144.36,
+          "category": "home essentials"
+        },
+        {
+          "name": "Romantic Rose Flowers Area Rugs Kitchen Living Room Floor Mat Non-slip Carpets",
+          "price": 58.83,
+          "category": "uncategorized"
+        }
+      ],
+      "_hash": "e91070c4854a79747ccd530362c66b13"
+    },
+    {
+      "invoice_id": "048a226f-bdc9-4f20-bfb6-0b86d9086289",
+      "invoice_no": "77658002",
+      "vendor": "Mckenzie, Clay and Campos",
+      "date": "01/21/2014",
+      "total_amount": 323.14,
+      "items": [
+        {
+          "name": "ils Divided Black Asymmetrical Dress -size 8 - NWT",
+          "price": 8.79,
+          "category": "fashion"
+        },
+        {
+          "name": "Eileen Fisher Women's Long Sleeve Fleece Lined Front Pockets Dress XS Gray",
+          "price": 70.36,
+          "category": "fashion"
+        },
+        {
+          "name": "a db Yellow Link Print Fit and Flare Sleeveless Dress Sz M/L",
+          "price": 49.47,
+          "category": "fashion"
+        },
+        {
+          "name": "womens sparkle dress size 2X Holiday Party RED metallic",
+          "price": 54.95,
+          "category": "home essentials"
+        },
+        {
+          "name": "5 Lands End Womens 3/4 Sleeve Dress Plus 3X Navy Blue Floral Cotton Knit 482038",
+          "price": 93.41,
+          "category": "fashion"
+        },
+        {
+          "name": "Liza Byrd Dress Sz L- Coral Green Medallion Print Short Sleeve 100% Cotton Line",
+          "price": 39.58,
+          "category": "fashion"
+        },
+        {
+          "name": "Te CLIFFORD & WILLS BLACK NET/MESH OVER TAUPE LONG DRESS SIZE 4",
+          "price": 6.59,
+          "category": "fashion"
+        }
+      ],
+      "_hash": "053fbd63ef87413963c820146ab64baf"
+    },
+    {
+      "invoice_id": "ae67f243-c02b-4e7b-8716-bd06728ed5e1",
+      "invoice_no": "62416513",
+      "vendor": "Eaton LLC Miller-Campbell",
+      "date": "05/05/2013",
+      "total_amount": 415.75,
+      "items": [
+        {
+          "name": "ils New ERIN Erin Fertherston each Straight Dress White Sequence Lining Sleeveless SZ 10",
+          "price": 329.95,
+          "category": "fashion"
+        },
+        {
+          "name": "J crew mercantile Knitted Tweed each Dress Size 4 Black And White",
+          "price": 85.8,
+          "category": "fashion"
+        }
+      ],
+      "_hash": "04f197f1a3bf6895b2e51bac8df635f0"
+    },
+    {
+      "invoice_id": "667d9aba-7f56-4670-978f-b10a06e498d9",
+      "invoice_no": "47743201",
+      "vendor": "Carpenter-Johnston",
+      "date": "07/23/2015",
+      "total_amount": 51.4,
+      "items": [
+        {
+          "name": "Jordan B\u2019Loyal Boys Grade School Sneakers US 3Y",
+          "price": 9.9,
+          "category": "fashion"
+        },
+        {
+          "name": "2: Sperry Top Sider Billfish Boys US Size 3W Youth Childrens Shoes",
+          "price": 5.45,
+          "category": "fashion"
+        },
+        {
+          "name": "a 5Ps Face Masks Men Women Unisex Kid Cover Clothing Mask Reusable Washable Cloth",
+          "price": 9.66,
+          "category": "uncategorized"
+        },
+        {
+          "name": "The Children\u2019s Place Brown Dress Boy Lace Up Shoes Size 12",
+          "price": 26.4,
+          "category": "fashion"
+        }
+      ],
+      "_hash": "8015cddcf606c08dd11caff37abfef70"
+    },
+    {
+      "invoice_id": "97b8cd65-03f1-4cc5-8e03-f8c7e51197e4",
+      "invoice_no": "89538216",
+      "vendor": "Boyd, Franklin and Santos",
+      "date": "09/09/2018",
+      "total_amount": 1682.77,
+      "items": [
+        {
+          "name": "ils Sega V Saturn Victor Console RG-JX1 Gray Tested Working Japan",
+          "price": 604.94,
+          "category": "uncategorized"
+        },
+        {
+          "name": "Nintendo BLUE Wii System Game Console Complete with 2 Motion Remotes Tested Work",
+          "price": 549.89,
+          "category": "uncategorized"
+        },
+        {
+          "name": "a B408 Nintendo Gameboy Color console Ice Blue Toysrus Limited Japan GBC REAR x",
+          "price": 329.96,
+          "category": "uncategorized"
+        },
+        {
+          "name": "Sega Genesis System Console Controller Games Bundle",
+          "price": 197.98,
+          "category": "uncategorized"
+        }
+      ],
+      "_hash": "5402034c7ad99a20a542314183418f54"
+    },
+    {
+      "invoice_id": "05cc2755-3f6e-4d43-b05a-6af1c4cc399b",
+      "invoice_no": "33137636",
+      "vendor": "Mckenzie PLC",
+      "date": "07/20/2015",
+      "total_amount": 215.03,
+      "items": [
+        {
+          "name": "ils The Fountainhead: 50th Anniversary Edition",
+          "price": 19.76,
+          "category": "uncategorized"
+        },
+        {
+          "name": "A Million Little Bricks The Unofficial Illustrated History of the LE",
+          "price": 14.82,
+          "category": "uncategorized"
+        },
+        {
+          "name": "a In the Footsteps of the Russian Snowman (Paperback or Softback)",
+          "price": 113.83,
+          "category": "uncategorized"
+        },
+        {
+          "name": "The Epic of Gilgamesh",
+          "price": 24.7,
+          "category": "uncategorized"
+        },
+        {
+          "name": "5: Evolutionary Analysis",
+          "price": 35.36,
+          "category": "uncategorized"
+        },
+        {
+          "name": "0 PLR Articles, 0 E-books + More",
+          "price": 6.57,
+          "category": "uncategorized"
+        }
+      ],
+      "_hash": "8e2a7245b85b0234cb3350ab19308719"
+    },
+    {
+      "invoice_id": "88cde8a1-dc17-4369-b0ce-b5f642f6e523",
+      "invoice_no": "24344887",
+      "vendor": "Cook Group",
+      "date": "02/20/2020",
+      "total_amount": 60.49,
+      "items": [
+        {
+          "name": "ils Endurance : Shackleton's Incredible Voyage by Alfred Lansing",
+          "price": 18.0,
+          "category": "uncategorized"
+        },
+        {
+          "name": "The Wim Hof Method Activate Your Potential, Transcend Your LimitsQOog0",
+          "price": 4.64,
+          "category": "uncategorized"
+        },
+        {
+          "name": "a BOO28NAO6EC Shoeless Joe",
+          "price": 15.36,
+          "category": "uncategorized"
+        },
+        {
+          "name": "A History of Christianity Vol. 1 : Beginnings to 1500 by Kenneth S. Latourette",
+          "price": 22.49,
+          "category": "uncategorized"
+        }
+      ],
+      "_hash": "55a895ffe38f881b71ac2b9f5b0da603"
+    },
+    {
+      "invoice_id": "4058f7e9-ada7-4c6c-87de-3cebef19dafe",
+      "invoice_no": "90446683",
+      "vendor": "Chang-Cooper",
+      "date": "02/11/2016",
+      "total_amount": 216.67,
+      "items": [
+        {
+          "name": "Cabi 5610 Striped White Blue Launch Maxi Dress Womens Sz M",
+          "price": 161.67,
+          "category": "fashion"
+        },
+        {
+          "name": "Socialite White Black Striped A Line Dress With Pockets Large",
+          "price": 55.0,
+          "category": "fashion"
+        }
+      ],
+      "_hash": "1c761790c7f12c48dc6fb92aa97ab0e3"
+    },
+    {
+      "invoice_id": "0c1674b7-7a8c-46b4-9746-95ef0e998abf",
+      "invoice_no": "52574707",
+      "vendor": "Martin, Johnson and Delgado",
+      "date": "04/12/2019",
+      "total_amount": 720.57,
+      "items": [
+        {
+          "name": "ils Boden Wren Ponte Midi Dress w/Color Block Hem NWT Size 10P Black Pink 10 Petite",
+          "price": 259.56,
+          "category": "fashion"
+        },
+        {
+          "name": "DESIGNER MICHAEL KORS DRESS SIZE S",
+          "price": 66.0,
+          "category": "fashion"
+        },
+        {
+          "name": "a Speechless Green Brown White Psychedelic Sleeveless Dress Size Large",
+          "price": 30.8,
+          "category": "fashion"
+        },
+        {
+          "name": "Jams World Hawaiian J] Dress Rayon sz.L",
+          "price": 71.5,
+          "category": "fashion"
+        },
+        {
+          "name": "Sy Weekend MaxMara Womens Blue Cotton Floral Casual Wrap Dress 10 BHFO 9284",
+          "price": 94.87,
+          "category": "fashion"
+        },
+        {
+          "name": "Xhilaration Womens L Burgandy Boho Embroidered Festival Mini Dress NEW",
+          "price": 49.33,
+          "category": "fashion"
+        },
+        {
+          "name": "Ee Lilly Pulitzer dress Size 2",
+          "price": 148.5,
+          "category": "fashion"
+        }
+      ],
+      "_hash": "cc14310beeccfa0537053bdc83a1a61d"
+    },
+    {
+      "invoice_id": "b0e3ad21-0f8c-4bfb-97f3-b9f961e46d40",
+      "invoice_no": "23128566",
+      "vendor": "Wells-Allen",
+      "date": "08/27/2020",
+      "total_amount": 135.62,
+      "items": [
+        {
+          "name": "ils A History of the Indians of the United States (The",
+          "price": 19.76,
+          "category": "uncategorized"
+        },
+        {
+          "name": "2: Experience by Martin Amis",
+          "price": 10.76,
+          "category": "uncategorized"
+        },
+        {
+          "name": "3: Language and Woman's Place by Robin Lakoff",
+          "price": 22.49,
+          "category": "uncategorized"
+        },
+        {
+          "name": "Motorcycle Journeys Through North America : A Guide for Choosing and Planning...",
+          "price": 13.2,
+          "category": "uncategorized"
+        },
+        {
+          "name": "oe The Epic of Gilgamesh",
+          "price": 9.88,
+          "category": "uncategorized"
+        },
+        {
+          "name": "Bobby Fischer s Chess Games",
+          "price": 59.53,
+          "category": "uncategorized"
+        }
+      ],
+      "_hash": "9f16c7792a0e25327cc58888e5b870db"
+    },
+    {
+      "invoice_id": "f5f246c0-8e86-43a8-9731-fc03e444aefe",
+      "invoice_no": "66045137",
+      "vendor": "Kelly Ltd",
+      "date": "08/09/2016",
+      "total_amount": 320.94,
+      "items": [
+        {
+          "name": "Wagner Vineyards uncork new york Wine Glass",
+          "price": 8.78,
+          "category": "uncategorized"
+        },
+        {
+          "name": "Mikasa Cheers Metallics Gold 140z Wine Glasses With Original Stickers ~Set Of 2",
+          "price": 32.97,
+          "category": "home essentials"
+        },
+        {
+          "name": "a One Pebbled Confetti Glass Wine Water Goblet 12 oz 8\" tall",
+          "price": 19.78,
+          "category": "uncategorized"
+        },
+        {
+          "name": "500g Active Dry Yeast for Alcohol Fermentation / White Wine Brewing with sacchar",
+          "price": 21.99,
+          "category": "uncategorized"
+        },
+        {
+          "name": "Se Unicorn Wine Bottle Display",
+          "price": 87.18,
+          "category": "uncategorized"
+        },
+        {
+          "name": "Iron Glass Holder Organizer Wall Mounted Kitchen Bar 5 Bottles Wine Rack Display",
+          "price": 146.29,
+          "category": "uncategorized"
+        },
+        {
+          "name": "as Stainless Steel Reusable Vacuum Sealed Champagne Red Wine Bottle Stopper Cap New",
+          "price": 3.96,
+          "category": "uncategorized"
+        }
+      ],
+      "_hash": "12fc4e3f992c76b5b7621c1132092860"
+    },
+    {
+      "invoice_id": "e9c826c2-bb4a-471f-8eb0-4e0b527f1fdb",
+      "invoice_no": "48239873",
+      "vendor": "Taylor-Robertson",
+      "date": "09/19/2016",
+      "total_amount": 97.52,
+      "items": [
+        {
+          "name": "Papaya Floral Dress Medium Blue White",
+          "price": 29.7,
+          "category": "fashion"
+        },
+        {
+          "name": "Fashion Sexy Backless Tight-fitting Halter Dress Cocktail Party Weeding Elegant",
+          "price": 29.04,
+          "category": "fashion"
+        },
+        {
+          "name": "a J Crew A Line Ponte Dress Red Size 0",
+          "price": 38.78,
+          "category": "fashion"
+        }
+      ],
+      "_hash": "cee1176a4e558257d281404bb88f362b"
+    },
+    {
+      "invoice_id": "17497de1-7c5f-4280-b527-38e5a7a7c2f2",
+      "invoice_no": "20527132",
+      "vendor": "Smith-Flores",
+      "date": "04/16/2018",
+      "total_amount": 1208.85,
+      "items": [
+        {
+          "name": "ils Handheld Video Game Console 400 in 1 Mini Retro Console Built in Video Games",
+          "price": 935.0,
+          "category": "uncategorized"
+        },
+        {
+          "name": "NEW PSOne Console / NFL Game Day 2001 - Gran Turismo 2 Pkg Unsealed",
+          "price": 45.1,
+          "category": "uncategorized"
+        },
+        {
+          "name": "a Xbox 360 console with games.",
+          "price": 175.98,
+          "category": "uncategorized"
+        }
+      ],
+      "_hash": "03d74fe7bc54d29c059f902a2cb14245"
+    },
+    {
+      "invoice_id": "7c04be58-34ee-43fb-b4ca-1b390f00ea0a",
+      "invoice_no": "35494837",
+      "vendor": "Smith-Peterson",
+      "date": "04/02/2019",
+      "total_amount": 95.94,
+      "items": [
+        {
+          "name": "ils Dont Sweat the Small Stuff... and Its All Small Stuff: Simple Ways to Keep",
+          "price": 9.88,
+          "category": "uncategorized"
+        },
+        {
+          "name": "House of Earth: A Novel by Woody Guthrie",
+          "price": 14.82,
+          "category": "home essentials"
+        },
+        {
+          "name": "3: Rod: The Autobiography by Rod Stewart",
+          "price": 19.76,
+          "category": "uncategorized"
+        },
+        {
+          "name": "Entertaining",
+          "price": 19.76,
+          "category": "uncategorized"
+        },
+        {
+          "name": "Se Warman's Star Wars Field Guide by Wells, Stuart W., Ill",
+          "price": 31.73,
+          "category": "uncategorized"
+        }
+      ],
+      "_hash": "7a66ebd121505cff43f4e884eb3ae0c8"
+    },
+    {
+      "invoice_id": "d67f2062-9a38-469d-8d11-127394a2978b",
+      "invoice_no": "14941401",
+      "vendor": "Harris-Jones Oconnor, Hubbard and Jackson",
+      "date": "07/28/2020",
+      "total_amount": 165.0,
+      "items": [
+        {
+          "name": "ils Xbox One S 1 TB Console each 10%",
+          "price": 1.0,
+          "category": "uncategorized"
+        },
+        {
+          "name": "Sony PlayStation 2 Fat Console each 10% PS2 SCPH-30001",
+          "price": 150.0,
+          "category": "uncategorized"
+        }
+      ],
+      "_hash": "d9ac688c8a26bc73833eafa867c87bfd"
+    },
+    {
+      "invoice_id": "4f4d92ba-7f1e-4412-b14c-c9ec4f0c4691",
+      "invoice_no": "56014042",
+      "vendor": "Nichols-Barajas Mckay PLC",
+      "date": "10/01/2014",
+      "total_amount": 52.8,
+      "items": [
+        {
+          "name": "ils Jordan Hydro 2 (TD)-Child Size each DS: 10% 12765 10c",
+          "price": 2.0,
+          "category": "uncategorized"
+        },
+        {
+          "name": "2: Sketchers Energy Lights Boys each 10% Black Canvas Size 4 With Charging Cable",
+          "price": 11.5,
+          "category": "uncategorized"
+        }
+      ],
+      "_hash": "1c084fcb7b63fe7e60fb3f6d6332e56b"
+    },
+    {
+      "invoice_id": "1a7ed16d-3d93-4bfe-9f87-9859e9006b61",
+      "invoice_no": "11764566",
+      "vendor": "Bernard, Lang and Guerra",
+      "date": "06/01/2018",
+      "total_amount": 97.75,
+      "items": [
+        {
+          "name": "Beach Lunch Lounge Striped Shirt Dress Large Navy Blue White Long Sleeve Causal",
+          "price": 74.76,
+          "category": "fashion"
+        },
+        {
+          "name": "NWT dRA M White Embroidered Nathalie Bohemian Mini Dress",
+          "price": 22.99,
+          "category": "fashion"
+        }
+      ],
+      "_hash": "382eb71523356946e68ba0e5c522cc89"
+    }
+  ]
+}
