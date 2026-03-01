@@ -107,14 +107,12 @@ Interactive dashboard includes:
 
 - 💰 Total Revenue  
 - 📄 Total Invoices  
-- 📊 Average Invoice Value  
+- 📊 Top Vendors  
 - 📈 Revenue by Category  
 - 🏢 Revenue by Vendor  
 - 📅 Yearly Invoice Trends  
 - 📆 Monthly Revenue Trends  
 - 🔝 Top 5 Expensive Invoices  
-
-Auto-refreshes every 5 seconds.
 
 ---
 
@@ -187,6 +185,77 @@ smart-invoice-expense-automation-system/
 ├── utils.py
 ├── requirements.txt
 └── README.md
+
+## ⚠️ Challenges Faced
+
+During the development of this Smart Invoice & Expense Automation System, several real-world technical challenges were encountered and resolved:
+
+---
+
+### 1️⃣ Inconsistent PDF Text Extraction
+
+- PDF layouts vary significantly across vendors.
+- `pdfplumber` sometimes merges columns or rearranges text.
+- Fields like **Invoice No** and **Vendor** appeared on the same line unexpectedly.
+- Required robust regex patterns and multi-format parsing logic.
+
+✅ Solution:  
+Implemented format detection logic and adaptive regex-based extraction.
+
+---
+
+### 2️⃣ Multi-Format Invoice Handling
+
+- Different invoice templates had completely different structures.
+- Some PDFs placed labels and values on separate lines.
+- OCR-based images had noisy or inconsistent text.
+
+✅ Solution:  
+Created separate parsers (`parse_format_1`, `parse_format_2`) with intelligent format detection.
+
+---
+
+### 3️⃣ OCR Noise & Text Imperfections
+
+- Image invoices extracted via Tesseract sometimes contained:
+  - Extra spaces
+  - Broken words
+  - Misaligned fields
+
+✅ Solution:  
+Applied pattern matching with fallback logic and keyword-based detection to improve reliability.
+
+---
+
+### 4️⃣ Email Authentication Issues
+
+- Gmail blocks normal password authentication.
+- Encountered SMTP authentication errors (Error 535).
+
+✅ Solution:  
+Configured Gmail App Passwords and implemented secure environment-variable-based credential handling.
+
+---
+
+### 5️⃣ Import Path & Package Structure Issues
+
+- Streamlit execution caused module import errors.
+- Running dashboard from subdirectories broke relative imports.
+
+✅ Solution:  
+Restructured project into a proper package layout and corrected module import paths.
+
+---
+
+### 6️⃣ File Overwrite & Duplicate Handling
+
+- Moving processed invoices caused overwrite errors.
+- Same invoice uploaded multiple times created duplicate records.
+
+✅ Solution:  
+Implemented:
+- Safe file renaming during move operations
+- MD5 hash-based deduplication system
 
 ---
 
