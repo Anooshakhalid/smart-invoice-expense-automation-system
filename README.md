@@ -160,6 +160,9 @@ Sends invoice summary email automatically.
 
 Dashboard auto-refreshes and reflects updated data.
 
+<img width="2816" height="1536" alt="Smart Invoice Automation" src="https://github.com/user-attachments/assets/256cea2c-00c1-4160-9406-0765038b3c7f" />
+
+
 ---
 
 ## ⚠️ Challenges Faced
