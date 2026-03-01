@@ -111,7 +111,7 @@ Example structure:
       "_hash": "file_hash"
     }
   ]
-}
+}```
 
 ## 6️⃣ Automatic Email Notifications
 
